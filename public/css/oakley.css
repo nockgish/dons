@@ -1,0 +1,1085 @@
+
+@import 'https://fonts.googleapis.com/css?family=Open+Sans';
+
+body {
+	background-color: #FEFDD4;
+	font-size: 16px;
+    width: 100vw;
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
+#nav {
+    position: fixed;
+    background-color: #000;
+    height: 50px;
+    width: 100%;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+}
+
+#oak-logo {
+    text-align: center;
+    width: 74px;
+    margin: auto;
+    display: block;
+    position: relative;
+    top: 10px;
+}
+
+#social-share {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+}
+
+
+#social-share ul {
+    list-style: none;
+}
+
+#social-share ul li {
+    color: #fff;
+    float: left;
+    margin-left: 20%;
+}
+
+#social-share ul li a {
+    color: #fff !important;
+}
+
+#social-share ul li i {
+    font-size: 22px;
+}
+
+
+#all {
+	/*background-color: #ffffcc;*/
+	position: absolute;
+	top: 50px;
+	left: 0;
+	/*height: 100vh;*/
+	width: 100vw;
+    overflow: hidden;
+
+}
+
+#all p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+#scene-first p, #scene-second p, #scene-third p {
+    line-height: 150%;
+}
+
+#container {
+    max-width: 1978px;
+    min-width: 1100px;
+    height: 100%;
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+#intro-movie video {
+    width: 100%;
+}
+
+.viewpics {
+    position: absolute;
+    top: 43%;
+    width: 22.22%;
+    right: 30%;
+    transition: 0.3s ease-in-out;
+    -webkit-transition: 0.3s ease-in-out;
+    -moz-transition: 0.3s ease-in-out;
+    transform: translate3d(0,0,0) scale(1.0);
+}
+
+.playvid {
+    position: absolute;
+    top: 43%;
+    width: 34.66%;
+    right: 44%;
+    transition: 0.3s ease-in-out;
+    transform: translate3d(0,0,0) scale(1.0);
+}
+
+#modesty-curtain {
+    background: #190f00;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 5000;
+    height: 100vh;
+    width: 100vw;
+    transition: 1s ease-in-out;
+    opacity: 1;
+}
+
+.modcurtain-logo {
+    width: 35%;
+    position: relative;
+    top: 8%;
+    left: 50%;
+    transform: translate(-50%, 94%);
+    display: block;
+}
+
+.curtain-loading {
+    color: #fff;
+    text-align: center;
+    font-family: 'Tungsten 5r';
+    font-size: 3em;
+    letter-spacing: 8px;
+    text-transform: uppercase;
+    position: relative;
+    top: 35%;
+}
+
+.curtain-load-animate {
+    animation: curtainload 3s ease-in-out infinite;
+    -moz-animation: curtainload ease-in-out 3s infinite;
+    -webkit-animation: curtainload ease-in-out 3s infinite;
+
+}
+
+@keyframes curtainload {
+    0% {
+        letter-spacing: 8px;
+    }
+
+    50% {
+        letter-spacing: 20px;
+    }
+}
+
+@-webkit-keyframes curtainload {
+    0% {
+        letter-spacing: 8px;
+    }
+
+    50% {
+        letter-spacing: 20px;
+    }
+}
+
+@-moz-keyframes curtainload {
+    0% {
+        letter-spacing: 8px;
+    }
+
+    50% {
+        letter-spacing: 20px;
+    }
+}
+
+#overlay-picsvid {
+    position: fixed;
+    background: black;
+    width: 1450px;
+    height: 816px;
+    z-index: 5010;
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+    transform: translateY(-300%) scale(0.0);
+    box-shadow: 0 0 120px black;
+}
+
+@media screen and (max-width: 1600px) {
+    #overlay-picsvid {
+        width: 1300px;
+        height: 732px;
+    }
+}
+
+@media screen and (max-width: 1430px) {
+    #overlay-picsvid {
+        width: 1024px;
+        height: 576px;
+    }
+
+}
+
+#holds_vid-and-pics {
+    width: 100%;
+    height: 100%;
+}
+
+.holds-left-image:hover .viewpics {
+    transform: translate3d(0,0,0) scale(1.2);
+}
+
+.holds-right-vid:hover .playvid {
+    transform: translate3d(0,0,0) scale(1.2);
+}
+
+.over-closer {
+    background: rgba(0, 0, 0, 0.67);
+    display: inline-block;
+    position: absolute;
+    right: -52px;
+    top: -16px;
+    padding: 0px 10px 2px 14px;
+    transition: 0.3s ease;
+}
+
+.over-closer span {
+    color: white;
+    font-size: 3em;
+    transform: translate3d(0,0,0) rotate(45deg);
+    display: inline-block;
+    position: relative;
+    transition: 0.3s ease;
+    overflow: hidden;
+}
+
+.over-closer:hover span {
+    transform: translate3d(0,0,0) rotate(45deg) scale(1.09);
+}
+
+.over-closer:hover {
+    background: rgba(107, 107, 107, 0.99);
+}
+
+/* Intro Scene */
+
+#intro-scene {
+  width: 100%;
+}
+
+#intro-movie {
+  width: 100%;
+  height: 100vh;
+  background-color: #ffffcc;
+  position: relative;
+}
+
+.intro-movie-border {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#intro-text {
+    max-width: 980px;
+    margin: auto;
+    margin-top: 8%;
+    margin-bottom: 8%;
+}
+
+.text-contain h2, h3, .words-by {
+	text-align: center;
+	font-family: 'Tungsten 5r';
+	color: #9f8e71;
+	padding-left: 5%;
+    padding-right: 5%;
+}
+
+.text-contain h2 {
+     text-transform: uppercase;
+     font-size: 5em;
+}
+
+.text-contain h3 {
+	 font-size: 1.7em;
+     font-family: 'Tungsten 6r';
+     font-weight: normal;
+}
+
+.text-contain .words-by {
+	font-size: 1.7em;
+    font-family: 'Tungsten 5r' !important;
+}
+
+.text-contain .text-of {
+    margin-top: 42%;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 5%;
+}
+
+.text-contain .text-of p {
+    font-family: 'Tungsten 5r';
+    color: #3e3e3e;
+    font-size: 1.1em;
+    line-height: 150%;
+    padding-bottom: 12px;
+}
+
+.clouds-contain {
+    position: absolute;
+    height: 100vh;
+    width: 50vw;
+    z-index: 1;
+    top: 11.5%;
+}
+
+.clouds-contain .c1 {
+    position: absolute;
+    top: 160px;
+    /*width: 50vw;*/
+    height: auto;
+    left: -16%;
+}
+
+.clouds-contain .c2 {
+    position: absolute;
+    top: 476px;
+    /*width: 22vw;*/
+    height: auto;
+    left: -50%;
+}
+
+.clouds-contain .c3 {
+    position: absolute;
+    bottom: -589px;
+    /*width: 41vw;*/
+    height: auto;
+    left: -46%;
+}
+
+.clouds-contain .c4 {
+    position: absolute;
+    top: 688px;
+    /*width: 39vw;*/
+    height: auto;
+    left: -33%;
+}
+
+.clouds-contain .c5 {
+    position: absolute;
+    top: 775px;
+    /*width: 42vw;*/
+    height: auto;
+    left: 606px;
+}
+
+.clouds-contain .c6 {
+    position: absolute;
+    top: 386px;
+    /*width: 22vw;*/
+    height: auto;
+    left: 790px;
+}
+
+.clouds-contain .c1,
+.clouds-contain .c2,
+.clouds-contain .c3,
+.clouds-contain .c4,
+.clouds-contain .c5,
+.clouds-contain .c6 {
+  transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -webkit-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  z-index: 4000;
+}
+
+#s1-arts {
+   opacity: 0;
+   transition: 1.5s;
+   transform: scale(2);
+}
+
+
+#s2-arts {
+   opacity: 0;
+   transition: 1.5s;
+   transform: scale(2);
+ }
+
+#s3-arts {
+   opacity: 0;
+   transition: 1.5s;
+   transform: scale(2);
+ }
+
+ #s1-pullquote p, #s2-pullquote p, #s3-pullquote p {
+    font-family: 'Tungsten 5r';
+ }
+
+
+
+
+
+/*
+
+Scene First (seen first): Zietz
+
+*/
+
+#scene-first {
+   position: relative;
+   z-index: 1;
+   height: 216vh;
+}
+
+.s1-mountains {
+    position: absolute;
+    width: 100%;
+    transform: translate3d(53px, 0, 0) scale(1.1);
+}
+
+.s-zietz {
+   position: absolute;
+    width: 34.8%;
+    left: 13.5%;
+    top: -91px;
+    clear: both;
+    display: block;
+    transform: translate3d(35px, 0, 0);
+}
+
+.s-zietz-name {
+    position: absolute;
+    width: 34.4%;
+    left: 42%;
+    top: 49px;
+    transform: translate3d(79.8px, 0, 0);
+}
+
+.fronttrees {
+   position: absolute;
+   width: 100%;
+   transform: translate3d(42px, 0, 0) scale(1.1);
+   top: -11px;
+}
+
+.s1-mountains, .s-zietz, .s-zietz-name, .fronttrees {
+    /*transition: transform 1s ease;*/
+}
+
+
+#s1-biopics {
+    position: relative;
+}
+
+#s1-bio-copy {
+    position: relative;
+    max-width: 64.6%;
+    transform: translate3d(23%, 120%, 0);
+    box-shadow: 0 0 63px rgba(19, 192, 45, 0.20) inset;
+    background: rgba(0, 0, 0, 0.74);
+    color: white;
+    padding: 1.3% 2%;
+    opacity: 0;
+    transition: 1s ease-in-out 0.5s;
+  }
+
+#s1-bio-copy p {
+    font-size: 1vw;
+}
+
+
+@media screen and (max-width: 1480px) {
+  #s1-bio-copy {
+    position: relative;
+    max-width: 76.6%;
+    background: rgba(0, 0, 0, 0.74);
+    color: white;
+    padding: 2%;
+    transform: translateY(115%) translateX(12%);
+/*    max-height: 159px;
+    overflow-y: scroll; */
+    }
+
+    #s1-bio-copy p {
+    font-size: 16px;
+}
+   }
+
+@media screen and (max-width: 1200px) {
+    #s1-bio-copy {
+    position: relative;
+    max-width: 76.6%;
+    background: rgba(0, 0, 0, 0.74);
+    color: white;
+    padding: 2%;
+    transform: translateY(81%) translateX(9%);
+}
+}
+
+#s1-twosides {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    top: 52vh;
+    overflow-x: hidden;
+    cursor: pointer;
+}
+
+.s1-lefts {
+   transform: translateX(-250%);
+   transition: 0.5s ease;
+}
+
+.s1-rights {
+   transform: translateX(250%);
+   transition: 0.5s ease;
+}
+
+.s1-lefts .holds-left-image {
+    width: 63vw;
+    height: 62vh;
+    position: relative;
+    overflow: hidden;
+    transform: skew(-20deg);
+    left: -23%;
+    border: 10px black solid;
+}
+
+.s1-lefts .holds-left-image .pics {
+    background: url(https://media.complex.com/campaigns/2016-q3/oakley-spectrum/img/s1-viewpics.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    transform: skew(20deg) scale(50) rotate(0deg);
+    transform-origin: center;
+    left: 14%;
+}
+
+.s1-rights .holds-right-vid {
+    width: 63vw;
+    height: 62vh;
+    position: relative;
+    overflow: hidden;
+    transform: skew(-20deg);
+    right: 24%;
+    border: 10px black solid;
+  }
+
+.s1-rights .holds-right-vid .vid {
+background: url(https://media.complex.com/campaigns/2016-q3/oakley-spectrum/img/s1-viewvid.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    transform: skew(20deg) scale(50) rotate(0deg);
+    transform-origin: center;
+    right: 13%;
+}
+
+.s1pics, .s1vid {
+    transition: 0.75s ease-in-out;
+}
+
+#s1-pullquote {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    max-width: 823px;
+    margin: auto;
+    color: #9f8e71;
+    top: 32vh;
+    margin-bottom: 10%;
+    transition: 0.5s ease;
+    transform: scale(3);
+    opacity: 0;
+    width: 100%;
+}
+
+.sz-name-quote, .rs-name-quote, .hucker-name-quote {
+    font-size: 0.8em;
+}
+
+
+/*
+
+Scene Second (seen second): Scheckler
+everybody gather 'round now
+
+*/
+
+#scene-second {
+    position: relative;
+    height: 274vh;
+}
+
+#scene-second .read-more {
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#scene-second .read-arrow {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    transform: rotate(-45deg);
+    padding: 0;
+}
+
+.s2-frontskyline {
+    position: absolute;
+    width: 100%;
+    transform: scale(1.1);
+    margin-top: 0px;
+}
+
+.s2-backtower {
+    position: absolute;
+    width: 18.23%;
+    top: 48px;
+    left: 104px;
+}
+
+.r-scheckler {
+    position: absolute;
+    width: 56.65%;
+    top: 80px;
+}
+
+.r-scheckler-name {
+   position: absolute;
+    width: 30.12%;
+    left: 46%;
+    top: 137px;
+    z-index: 2;
+    transform: scale(1.2);
+}
+
+#s2-bio-copy {
+    position: relative;
+    max-width: 74.6%;
+    background: rgba(0, 0, 0, 0.80);
+    color: white;
+    padding: 1.3% 2%;
+    transform: translate3d(13%, 87%, 0);
+    box-shadow: 0 0 55px rgba(59, 150, 163, 0.31) inset;
+    opacity: 0;
+    transition: 1s ease-in-out 0.5s;
+  }
+
+#s2-bio-copy p {
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 1480px) {
+  #s2-bio-copy {
+    position: relative;
+    max-width: 76.6%;
+    background: rgba(0, 0, 0, 0.74);
+    color: white;
+    padding: 2%;
+    transform: translateY(87%) translateX(12%);
+    }
+
+    #s2-bio-copy p {
+    font-size: 16px;
+}
+   }
+
+@media screen and (max-width: 1200px) {
+    #s2-bio-copy {
+    position: relative;
+    max-width: 76.6%;
+    background: rgba(0, 0, 0, 0.74);
+    color: white;
+    padding: 2%;
+    transform: translateY(78%) translateX(12%);
+}
+}
+
+#s2-twosides {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    top: 57vh;
+    cursor: pointer;
+}
+
+.s2-lefts {
+   transform: translateX(-250%);
+   transition: 0.5s ease;
+}
+
+.s2-rights {
+   transform: translateX(250%);
+   transition: 0.5s ease;
+}
+
+.s2-lefts .holds-left-image {
+    width: 63vw;
+    height: 62vh;
+    position: relative;
+    overflow: hidden;
+    transform: skew(-20deg);
+    left: -23%;
+    border: 10px black solid;
+}
+
+.s2-lefts .holds-left-image .pics {
+    background: url(https://media.complex.com/campaigns/2016-q3/oakley-spectrum/img/s2-viewpics.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    transform: skew(20deg) scale(50) rotate(0deg);
+    transform-origin: center;
+    left: 14%;
+}
+
+
+.s2-rights .holds-right-vid {
+    width: 63vw;
+    height: 62vh;
+    position: relative;
+    overflow: hidden;
+    transform: skew(-20deg);
+    right: 24%;
+    border: 10px black solid;
+  }
+
+.s2-rights .holds-right-vid .vid {
+background: url(https://media.complex.com/campaigns/2016-q3/oakley-spectrum/img/s2-viewvid.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    transform: skew(20deg) scale(50) rotate(0deg);
+    transform-origin: center;
+    right: 13%;
+}
+
+.s2pics, .s2vid {
+    transition: 0.75s ease-in-out;
+}
+
+#s2-pullquote {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    max-width: 823px;
+    margin: auto;
+    color: #9f8e71;
+    top: 38vh;
+    margin-bottom: 10%;
+    transition: 0.5s ease;
+    transform: scale(3);
+    opacity: 0;
+    width: 100%;
+}
+
+
+/*
+
+Scene Third (seen third): Hucker
+it's BMX time
+
+*/
+
+#scene-third {
+    position: relative;
+    height: 325vh;
+}
+
+#scene-third .read-more {
+    text-align: center;
+    color: #000;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+#scene-third .read-arrow {
+    display: block;
+    height: 30px;
+    width: 30px;
+    margin: auto;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    transform: rotate(-45deg);
+    padding: 0;
+}
+
+.s3-frontrock {
+    position: absolute;
+    width: 100%;
+    transform: scale(1.1);
+    top: 3vh;
+}
+
+.s3-middlemountains {
+    position: absolute;
+    width: 111.9%;
+    transform: scale(1.1);
+    top: 32vh;
+    left: -1%;
+    border: none !important;
+    outline: none !important;
+
+}
+
+.s3-backmountains {
+    position: absolute;
+    width: 103%;
+    top: 0px;
+    left: -8%;
+}
+
+.mc-hucker {
+    position: absolute;
+    width: 50.39%;
+    top: -15vh;
+    left: 52%;
+}
+
+.mc-hucker-name {
+    position: absolute;
+    width: 21.15%;
+    left: -6.67%;
+    top: -30px;
+    z-index: -1;
+}
+
+#s3-bio-copy {
+    position: relative;
+    max-width: 63.6%;
+    background: rgba(0, 0, 0, 0.74);
+    color: white;
+    padding: 1.3% 2%;
+    transform: translate3d(24%, 125%, 0);
+    box-shadow: 0 0 50px rgba(192, 175, 19, 0.43) inset;
+    opacity: 0;
+    transition: 1s ease-in-out 0.3s;
+  }
+
+#s3-bio-copy p {
+    font-size: 1vw;
+}
+
+@media screen and (max-width: 1480px) {
+  #s3-bio-copy {
+    position: relative;
+    max-width: 76.6%;
+    background: rgba(0, 0, 0, 0.74);
+    color: white;
+    padding: 2%;
+    transform: translateY(82%) translateX(12%);
+    }
+
+    #s3-bio-copy p {
+    font-size: 16px;
+}
+   }
+
+@media screen and (max-width: 1200px) {
+    #s3-bio-copy {
+    position: relative;
+    max-width: 76.6%;
+    background: rgba(0, 0, 0, 0.74);
+    color: white;
+    padding: 2%;
+    transform: translate3d(25%, 75%, 0px) !important;
+    /*max-height: 120px;*/
+    overflow-y: scroll;
+}
+}
+
+#s3-twosides {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    position: relative;
+    top: 53vh;
+    cursor: pointer;
+}
+
+.s3-lefts {
+   transform: translateX(-250%);
+   transition: 0.5s ease;
+}
+
+.s3-rights {
+   transform: translateX(250%);
+   transition: 0.5s ease;
+}
+
+.s3-lefts .holds-left-image {
+    width: 63vw;
+    height: 62vh;
+    position: relative;
+    overflow: hidden;
+    transform: skew(-20deg);
+    left: -23%;
+    border: 10px black solid;
+}
+
+.s3-lefts .holds-left-image .pics {
+    background: url(https://media.complex.com/campaigns/2016-q3/oakley-spectrum/img/s3-viewpics.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    transform: skew(20deg) scale(50) rotate(0deg);
+    transform-origin: center;
+    left: 14%;
+}
+
+
+.s3-rights .holds-right-vid {
+    width: 63vw;
+    height: 62vh;
+    position: relative;
+    overflow: hidden;
+    transform: skew(-20deg);
+    right: 24%;
+    border: 10px black solid;
+  }
+
+.s3-rights .holds-right-vid .vid {
+background: url(https://media.complex.com/campaigns/2016-q3/oakley-spectrum/img/s3-viewvid.jpg);
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    transform: skew(20deg) scale(50) rotate(0deg);
+    transform-origin: center;
+    right: 13%;
+}
+
+.s3pics, .s3vid {
+    transition: 0.75s ease-in-out;
+}
+
+#s3-pullquote {
+    display: block;
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    max-width: 823px;
+    margin: auto;
+    color: #9f8e71;
+    top: 32vh;
+    margin-bottom: 10%;
+    transition: 0.5s ease;
+    transform: scale(3);
+    opacity: 0;
+    width: 100%;
+}
+
+footer {
+    position: absolute;
+    bottom: -10%;
+    background: #232323;
+    min-height: 500px;
+    width: 100%;
+    height: 69vh;
+}
+
+footer .footer-logo {
+    width: 25vw;
+    margin-left: 10%;
+    margin-top: 5%;
+}
+
+footer .footer-rightsr {
+    margin-left: 10%;
+    margin-top: 1%;
+    color: #6a6a6a;
+    font-size: 0.95em;
+}
+
+@media screen and (max-height: 790px) {
+    #s1-bio-copy p, #s2-bio-copy p, #s3-bio-copy p {
+        font-size: 14px !important;
+    }
+
+    #scene-first {
+        height: 245vh !important;
+    }
+
+    #s1-bio-copy {
+      transform: translate3d(8.5%, 72%, 0px) !important;
+    }
+
+    #s2-bio-copy {
+      transform: translate3d(13%, 86%, 0px) !important;
+    }
+
+    #s3-bio-copy {
+        transform: translate3d(13%, 75%, 0px) !important;
+
+    }
+
+    #scene-second {
+        height: 320vh !important;
+    }
+
+    #s2-twosides {
+        top: 80vh !important;
+    }
+
+    #scene-third {
+    height: 375vh !important;
+    }
+
+
+    #s3-twosides {
+        top: 67vh !important;
+    }
+
+    .text-contain h2 {
+        margin-top: 42% !important;
+    }
+
+    #s1-pullquote, #s2-pullquote, #s3-pullquote {
+        font-size: 1.5em !important ;
+        max-width: 700px !important;
+    }
+
+    #s2-pullquote {
+        top: 61vh;
+        max-width: 782px !important;
+    }
+
+    #s3-pullquote {
+        top: 43vh !important;
+
+    }
+
+    #inline-ad-for-spectrum-pb {
+    max-width: 850px;
+    margin: auto;
+    margin-top: 32% !important;
+}
+}
+
+
+#inline-ad-for-spectrum-pb {
+    max-width: 970px;
+    margin: auto;
+    margin-top: 29%;
+    position: relative;
+    top: 10.90%;
+}
+
+
+@media screen and (max-height: 970px) {
+    .text-contain h2 {
+        margin-top: 42% !important;
+    }
+
+    #inline-ad-for-spectrum-pb {
+    max-width: 970px;
+    margin: auto;
+    margin-top: 22%;
+    position: relative;
+    top: 5.87%;
+}
+}
